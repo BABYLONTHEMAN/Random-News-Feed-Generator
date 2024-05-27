@@ -40,9 +40,16 @@ var g2 = function gg2(){
       function random2() {
         function randomName() {
             const names = [
-                'nayalm nayalm mu7tajbm ',
-                'hata mn mabm ',
-                'nayalm muhtajbn ',
+                'بخۆن گوڵ خاڵوی ',
+                ' ناهێڵم موحتاج بن',
+                ' ئەمانە هەموو گوڵ خاڵۆن ',
+                'بخۆن بەلاش خۆرەکان ',
+                'لەگــەڵ خاڵۆ و گوڵەکانی ',
+                ' بخۆ عافێتت بێ',
+                'هەتا من مابم ناهێڵم موحتاج بن',
+                'هەتا من مابم نایەڵم موحتاج بن',
+                '',
+
                 // and so on
             ];
     
@@ -53,7 +60,16 @@ var g2 = function gg2(){
 
     }
 
-    document.getElementById('r1').innerText = random2();
-    document.getElementById('r2').innerText = random2();
-    document.getElementById('r3').innerText = random2();
+    function updateRandomName() {
+      document.getElementById('r1').innerText = random2();
+      document.getElementById('r2').innerText = random2();
+      document.getElementById('r3').innerText = random2();  
+    }
+
+  // Update the random name every 5 seconds
+  setInterval(updateRandomName, 5000);
+
+  // Initial name set
+  updateRandomName();
+   
     
